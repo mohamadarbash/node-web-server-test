@@ -47,6 +47,12 @@ app.get('/home', (req, res) => {
 		current: new Date().getFullYear()
 	});
 });
+app.get('/test', (req, res) => {
+	res.render('test.hbs', {
+		welcomeTitle: ' hi yooo',
+		current: new Date().getFullYear()
+	});
+});
 
 app.get('/about', (req, res) => {
 res.render('about.hbs', {
